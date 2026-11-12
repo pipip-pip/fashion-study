@@ -4,21 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fashion Study</title>
-  <style>
-    /* Calm colours, and readable on a computer and on an iPhone */
-    body {
-      margin: 0;
-      padding: 40px 16px;
-      background: #F6F1E7;
-      color: #2E2A25;
-      font-family: Georgia, serif;
-      line-height: 1.7;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Fashion Study</h1>
-  <p>Coming soon.</p>
+  <header class="top">
+    <a class="brand" href="#/library">Fashion Study</a>
+    <nav>
+      <a href="#/library" data-tab="library">Library</a>
+      <a href="#/skills" data-tab="skills">Skills</a>
+    </nav>
+  </header>
+
+  <main id="app"><p class="muted">Loading…</p></main>
+
+  <dialog id="lightbox"><img alt=""></dialog>
+
+  <!-- Plain scripts (no modules) so the page also works when opened straight from a folder -->
+  <script src="techniques.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
